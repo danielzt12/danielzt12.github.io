@@ -35,16 +35,19 @@ The live inference part is actually more straightforward. The detector images ar
 This video was recorded directly on the beamline computer. You have, on the top left the live detector image (diffraction pattern), and on the top right the live inference result (phase). The diffraction patterns are in the [reciprocal](https://en.wikipedia.org/wiki/Reciprocal_lattice) space so they aren't very useful unless you are trained to read them. The inference results, however, are in real space, which means we can stitch them together to form a complete picture like a jigsaw puzzle. To do that, we simply put the inference results at coordinates indicated by the motor positions. It (bottom left) might look simple, almost reminiscent of pointing a flashlight at the sample in the dark, except that this would not have been possible without the NN. If we trace all the existing results together, we then obtain a sample image (bottom right) being updated in real time as the scan progresses.
 {: style="text-align: justify;"}
 
-What is also interesting is that the NN was not trained on features like these (numbers, vertical and horizontal lines). The training features were randomly etched patterns similar to the ones you see if you skip to the end of the video. Granted they are made of the same material with the same thickness which indicates they would have the same [refractive index](https://en.wikipedia.org/wiki/Refractive_index), it is still a pleasant surprise to us that inference worked well even on dissimilar patterns.
+What is also interesting is that the NN was not trained on features like these (numbers, vertical and horizontal lines). The training features were randomly etched patterns similar to the ones you see if you skip to the end of the video. Granted they are made of the same material with the same thickness which indicates they would have the same [refractive index](https://en.wikipedia.org/wiki/Refractive_index), it is still a pleasant surprise to us that the inference worked well even on dissimilar patterns.
 {: style="text-align: justify;"}
 
 # 2 KHz Inference
-For the above experiment, we were only able to reach 100 Hz framerate. 
+For the above experiment, we were only able to reach 100 Hz framerate. The bottleneck at the time was the 1 Gbps ethernet connection from the detector computer. For a detector with 516x516 pixels streaming 16 bit images at 100 Hz, the data rate is 0.5 Gbps, and we had to stream it both to the edge device (for live inference) and to the beamline computer (for live display).
+{: style="text-align: justify;"}
 
+More recently, we were able to break this record by achieving live inference of ptychographic data at 2 kHz. To do so, we used the latest generation [Eiger](https://www.dectris.com/detectors/x-ray-detectors/eiger2/) 2 X detector which has a max framerate of exactly 2 kHz. We cropped the detector image to the size of 128x128 pixels in order to stay below 0.5 Gbps. And finally we also had to part with the edge device and used a more beefy machine for the inference. The demonstration is recorded in the video below. 
+{: style="text-align: justify;"}
 
 # Acknowledgement
 Anakha V Babu (PI), Tao Zhou (moi), Anakha V Babu, Saugat Kandel, Tekin Bicer, Steven Henke, Yi Jiang, Ryan Chard, Yudong Yao, Sinisa Veseli, Zhengchun Liu, Ekaterina Sirazitdinova, Geetika Gupta, Martin V. Holt, Antonino Miceli, Mathew J. Cherukara
 {: style="text-align: justify;"}
 Work performed at the Center for Nanoscale Materials and Advanced Photon Source, both U.S. Department of Energy Office of Science User Facilities, was supported by the U.S. DOE, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
 {: style="text-align: justify;"}
-
+<video src="https://user-images.githubusercontent.com/20727490/178209735-6204d707-8e75-4dc8-b549-195b48465414.mp4" controls="controls" style="max-width: 730px;"></video>

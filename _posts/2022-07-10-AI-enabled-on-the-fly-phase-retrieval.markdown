@@ -20,6 +20,7 @@ Below you can find some recordings of a demonstration we did on the Hard X-ray N
 <video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
+
 We used the [NVIDIA Jetson AGX Xavier developer kit](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) for the NN 
 
 # Results
@@ -29,3 +30,4 @@ We used the [NVIDIA Jetson AGX Xavier developer kit](https://developer.nvidia.co
 # Acknowledgement
 
 
+{: style="color:gray; font-size: 80%; text-align: center;"}

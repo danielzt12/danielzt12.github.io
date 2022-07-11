@@ -16,12 +16,11 @@ We [demonstrated](https://aip.scitation.org/doi/10.1063/5.0013065) a while back 
 </ol>
 {: style="text-align: justify;"}
 
-Below you can find some recordings of a demonstration we did on the Hard X-ray Nanoprobe (HXN) beamline co-managed by the Center for Nanoscale Materials (CNM) and the Advanced Photon Source (APS). To make it more interesting, we moved the phase retrieval task to a palm-size [edge](https://en.wikipedia.org/wiki/Edge_computing) device.
+Below you can find some recordings of a demonstration we did on the Hard X-ray Nanoprobe (HXN) beamline co-managed by the Center for Nanoscale Materials ([CNM](https://www.anl.gov/cnm)) and the Advanced Photon Source ([APS](https://www.aps.anl.gov/)). To make it more interesting, we moved the phase retrieval task to a palm-size [edge](https://en.wikipedia.org/wiki/Edge_computing) device.
 {: style="text-align: justify;"}
 
 # Workflow
-<video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;">
-</video>
+<video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;"></video>
 Here is an animated version of the workflow. Near the bottom left is a typical ptychographic measurement. A focused beam is being scanned on the sample with a spiral pattern producing, at each point, a diffraction pattern recorded on the detector. Those detector images are then saved on our data server, awaiting the phase retrieval process which begins on a local GPU at the end of each scan.
 {: style="text-align: justify;"}
 
@@ -32,8 +31,8 @@ The live inference part is actually more straightforward. The detector images ar
 {: style="text-align: justify;"}
 
 # Demonstration
-<video src="https://user-images.githubusercontent.com/20727490/178196540-206126b5-9ab2-41fc-b5ad-6fd5efa40933.mp4" controls="controls" style="max-width: 730px;">
-</video>
+<video src="https://user-images.githubusercontent.com/20727490/178196540-206126b5-9ab2-41fc-b5ad-6fd5efa40933.mp4" controls="controls" style="max-width: 730px;"></video>
+This video was recorded directly on the beamline computer. You have, on the top left the live detector image, and on the top right the live inference result. The diffraction pattern (top left) is they aren't very useful unless analyzed.
 
 # Max Framerate Inference
 

@@ -4,7 +4,7 @@ title:  "AI-enabled on-the-fly phase retrieval"
 date:   2022-07-10 19:28:53 -0500
 categories: latest news
 ---
-<video src="[https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4](https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4)" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

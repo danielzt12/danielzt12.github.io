@@ -9,6 +9,7 @@ categories: latest news
 {: style="text-align: justify;"}
 
 We [demonstrated](https://aip.scitation.org/doi/10.1063/5.0013065) a while back that if trained, a deep convolutional neural network (NN) can be used to replace the iterative optimizer. This approach has a few advantages. 
+{: style="text-align: justify;"}
 <ol>
   <li>NN inference is performed on a per image basis. That means we no longer need to wait till the end of the scan to perform phase retrieval. Instead, the phase of the illuminated area can be retrieved in real time as the new detector image comes in.</li>
   <li>Because each detector image can now be analyzed independently, spatial overlap of the illuminated areas is no longer required. This allows us to cover a larger area for the same amount of time, and to reduce the beam damage on the sample.</li>

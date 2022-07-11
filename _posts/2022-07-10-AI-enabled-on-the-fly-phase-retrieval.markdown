@@ -22,16 +22,18 @@ Below you can find some recordings of a demonstration we did on the Hard X-ray N
 # Workflow
 <video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;">
 </video>
-Here is an animated version of the workflow. Near the bottom left is a typical ptychographic measurement. A focused beam is being scanned on the sample with a spiral pattern producing, at each point, a diffraction pattern recorded on the detector. Those detector images are then saved on our data server, awaiting the phase retrieval process which begins on a local GPU at the end the each scan.
+Here is an animated version of the workflow. Near the bottom left is a typical ptychographic measurement. A focused beam is being scanned on the sample with a spiral pattern producing, at each point, a diffraction pattern recorded on the detector. Those detector images are then saved on our data server, awaiting the phase retrieval process which begins on a local GPU at the end of each scan.
 {: style="text-align: justify;"}
 
-One of our original [idea](https://aip.scitation.org/doi/10.1063/5.0013065) was to use those experimentally retrieved phase to train the NN. By not relying on simulated training data, the inference results are more accurate, and the workflow is beamline/probe agnostic. So we prepare the training data in pairs of diffraction pattern + cropped retrieved phase, uploading them to a [high performance computing cluster](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview) for the training, and download the trained model to a [NVIDIA Jetson AGX Xavier developer kit](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) sitting next to the detector. The training model is further optimized using the [TensorRT](https://developer.nvidia.com/tensorrt) SDK.
+One of our original [idea](https://aip.scitation.org/doi/10.1063/5.0013065) was to use those experimentally retrieved phase to train the NN. By not relying on simulated training data, the inference results are more accurate, and the workflow becomes beamline/probe agnostic. So we prepare the training data in pairs of diffraction pattern + cropped retrieved phase, uploading them to a high performance computing [HPC](https://www.alcf.anl.gov/support-center/theta/theta-thetagpu-overview)cluster for the training, and download the trained model to a NVIDIA Jetson [AGX](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) Xavier developer kit sitting next to the detector. The training model is further optimized using the [TensorRT](https://developer.nvidia.com/tensorrt) SDK.
 {: style="text-align: justify;"}
 
 The live inference part is actually more straightforward. The detector images are streamed directly to the edge device via the [pvacess](https://epics-controls.org/resources-and-support/documents/pvaccess/) protocol. Within microseconds of delay, the edge device predicts the real space image (phase), and streams it to the beamline computer. As you can imagine, the inference accuracy gets better as we improve the model by accumulating more training data. The online training loop stops when the inferred phase is as good as the reconstructed ones.
 {: style="text-align: justify;"}
 
 # Demonstration
+
+# Max Framerate Inference
 
 # Outlook
 

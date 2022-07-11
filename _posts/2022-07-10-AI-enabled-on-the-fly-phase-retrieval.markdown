@@ -32,22 +32,15 @@ The live inference part is actually more straightforward. The detector images ar
 
 # Demonstration
 <video src="https://user-images.githubusercontent.com/20727490/178196540-206126b5-9ab2-41fc-b5ad-6fd5efa40933.mp4" controls="controls" style="max-width: 730px;"></video>
-This video was recorded directly on the beamline computer. You have, on the top left the live detector image (diffraction pattern), and on the top right the live inference result (phase). The diffraction patterns are in the [reciprocal](https://en.wikipedia.org/wiki/Reciprocal_lattice) space so they aren't very useful unless you are trained to read them. The inference results, however, are in real space, which means we can stitch them together to form a complete picture like a jigsaw puzzle. To do that, we simply put the inference results at coordinates indicated by the motor positions. This is shown on the bottom left, which I always thought 
-It is almost like pointing a flashlight  
-
-
-
-If we trace all the existing results together, we then obtain a sample image being updated in real time
-
-
-as the beam 
-updated sample image in real time as the beamxx.
+This video was recorded directly on the beamline computer. You have, on the top left the live detector image (diffraction pattern), and on the top right the live inference result (phase). The diffraction patterns are in the [reciprocal](https://en.wikipedia.org/wiki/Reciprocal_lattice) space so they aren't very useful unless you are trained to read them. The inference results, however, are in real space, which means we can stitch them together to form a complete picture like a jigsaw puzzle. To do that, we simply put the inference results at coordinates indicated by the motor positions. It (bottom left) might look simple, almost reminiscent of pointing a flashlight at the sample in the dark, except that this would not have been possible without the NN. If we trace all the existing results together, we then obtain a sample image (bottom right) being updated in real time as the scan progresses.
 {: style="text-align: justify;"}
 
-time...
-new object
+What is also interesting is that the NN was not trained on features like these (numbers, vertical and horizontal lines). The training features were randomly etched patterns similar to the ones you see if you skip to the end of the video. Granted they are made of the same material with the same thickness which indicates they would have the same [refractive index](https://en.wikipedia.org/wiki/Refractive_index), it is still a pleasant surprise to us that inference worked well even on dissimilar patterns.
+{: style="text-align: justify;"}
 
-# Max Framerate Inference
+# MaxFramerate Inference
+The above example blabla
+
 
 # Outlook
 

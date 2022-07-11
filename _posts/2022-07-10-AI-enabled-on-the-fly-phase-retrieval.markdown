@@ -38,11 +38,8 @@ This video was recorded directly on the beamline computer. You have, on the top 
 What is also interesting is that the NN was not trained on features like these (numbers, vertical and horizontal lines). The training features were randomly etched patterns similar to the ones you see if you skip to the end of the video. Granted they are made of the same material with the same thickness which indicates they would have the same [refractive index](https://en.wikipedia.org/wiki/Refractive_index), it is still a pleasant surprise to us that inference worked well even on dissimilar patterns.
 {: style="text-align: justify;"}
 
-# MaxFramerate Inference
-The above example blabla
-
-
-# Outlook
+# 2 KHz Inference
+For the above experiment, we were only able to reach 100 Hz framerate. 
 
 
 # Acknowledgement

@@ -32,6 +32,8 @@ The live inference part is actually more straightforward. The detector images ar
 {: style="text-align: justify;"}
 
 # Demonstration
+<video src="[https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4](https://user-images.githubusercontent.com/20727490/178196540-206126b5-9ab2-41fc-b5ad-6fd5efa40933.mp4)" controls="controls" style="max-width: 730px;">
+</video>
 
 # Max Framerate Inference
 

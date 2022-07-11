@@ -42,12 +42,13 @@ What is also interesting is that the NN was not trained on features like these (
 For the above experiment, we were only able to reach 100 Hz framerate. The bottleneck at the time was the 1 Gbps ethernet connection from the detector computer. For a detector with 516x516 pixels streaming 16 bit images at 100 Hz, the data rate is 0.5 Gbps, and we had to stream it both to the edge device (for live inference) and to the beamline computer (for live display).
 {: style="text-align: justify;"}
 
-More recently, we were able to break this record by achieving live inference of ptychographic data at 2 kHz. To do so, we used the latest generation [Eiger](https://www.dectris.com/detectors/x-ray-detectors/eiger2/) 2 X detector which has a max framerate of exactly 2 kHz. We cropped the detector image to the size of 128x128 pixels in order to stay below 0.5 Gbps. And finally we also had to part with the edge device and used a more beefy machine for the inference. The demonstration is recorded in the video below. 
+More recently, we were able to break our own record by achieving live inference of ptychographic data at 2 kHz. To do so, we used the latest generation [Eiger](https://www.dectris.com/detectors/x-ray-detectors/eiger2/) 2 X detector which has a max framerate of exactly 2 kHz. We cropped the detector image to the size of 128x128 pixels to stay below 0.5 Gbps. And finally we also had to part with the edge device and used a more beefy machine for the inference. The demonstration is recorded in the video below. As it turned out 2 kHz was too fast for the live display widgets, so we had to calculate and print out the real framerate ourselves. It takes a few seconds at the start for the NN to come online, during which we have accumulated more than 10000 frames. Because the actual inference rate is higher than 2 kHz, the number of buffered frames was gradually reduced and the NN was able to catch up with the live data stream near the end of this video (the inference rate matches the framerate of the detector). 
 {: style="text-align: justify;"}
+<video src="https://user-images.githubusercontent.com/20727490/178209735-6204d707-8e75-4dc8-b549-195b48465414.mp4" controls="controls" style="max-width: 730px;"></video>
 
 # Acknowledgement
 Anakha V Babu (PI), Tao Zhou (moi), Anakha V Babu, Saugat Kandel, Tekin Bicer, Steven Henke, Yi Jiang, Ryan Chard, Yudong Yao, Sinisa Veseli, Zhengchun Liu, Ekaterina Sirazitdinova, Geetika Gupta, Martin V. Holt, Antonino Miceli, Mathew J. Cherukara
 {: style="text-align: justify;"}
 Work performed at the Center for Nanoscale Materials and Advanced Photon Source, both U.S. Department of Energy Office of Science User Facilities, was supported by the U.S. DOE, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
 {: style="text-align: justify;"}
-<video src="https://user-images.githubusercontent.com/20727490/178209735-6204d707-8e75-4dc8-b549-195b48465414.mp4" controls="controls" style="max-width: 730px;"></video>
+

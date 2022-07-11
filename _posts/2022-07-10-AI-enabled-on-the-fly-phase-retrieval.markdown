@@ -5,8 +5,8 @@ date:   2022-07-10 19:28:53 -0500
 categories: latest news
 ---
 # Background
-[Ptychography](https://en.wikipedia.org/wiki/Ptychography) is a high-resolution imaging method that has gained widespread application in [synchrontron](https://en.wikipedia.org/wiki/Synchrotron) x-ray and electron microscopy. Typical ptychographic measurement requires the scanning of a [coherent](https://en.wikipedia.org/wiki/Coherence_(physics)) beam across the sample. To ensure sufficient numerical constraint, the beam illuminated area must overlap with one another for each point of the scan. At the end of the scan, the two-dimensional detector images are then fed together into an interative optimizer for the [phase](https://en.wikipedia.org/wiki/Phase_problem) retrieval process.
-
+[Ptychography](https://en.wikipedia.org/wiki/Ptychography) is a high-resolution imaging method that has gained widespread application in [synchrontron](https://en.wikipedia.org/wiki/Synchrotron) x-ray and electron microscopy. Typical ptychographic measurement requires the scanning of a [coherent](https://en.wikipedia.org/wiki/Coherence_(physics)) beam across the sample. To ensure sufficient numerical constraint, the beam illuminated area must overlap with one another for each point of the scan. At the end of the scan, the two-dimensional detector images are then fed together into an interative optimizer for the [phase](https://en.wikipedia.org/wiki/Phase_problem) retrieval process.1
+{: style="color:gray; font-size: 80%; text-align: center;"}
 We [demonstrated](https://aip.scitation.org/doi/10.1063/5.0013065) a while back that if trained, a deep convolutional neural network (NN) can be used to replace the iterative optimizer. This approach has a few advantages. 
 <ol>
   <li>NN inference is performed on a per image basis. That means we no longer need to wait till the end of the scan to perform phase retrieval. Instead, the phase of the illuminated area can be retrieved in real time as the new detector image comes in.</li>

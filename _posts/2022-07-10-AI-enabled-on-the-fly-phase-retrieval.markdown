@@ -47,7 +47,7 @@ More recently, we were able to break our own record by achieving live inference 
 <video src="https://user-images.githubusercontent.com/20727490/178209735-6204d707-8e75-4dc8-b549-195b48465414.mp4" controls="controls" style="max-width: 730px;"></video>
 
 # Acknowledgement
-Anakha V Babu (PI), Tao Zhou (moi), Anakha V Babu, Saugat Kandel, Tekin Bicer, Steven Henke, Yi Jiang, Ryan Chard, Yudong Yao, Sinisa Veseli, Zhengchun Liu, Ekaterina Sirazitdinova, Geetika Gupta, Martin V. Holt, Antonino Miceli, Mathew J. Cherukara
+Anakha V Babu (PI), Tao Zhou (moi), Saugat Kandel, Tekin Bicer, Steven Henke, Yi Jiang, Ryan Chard, Yudong Yao, Sinisa Veseli, Zhengchun Liu, Ekaterina Sirazitdinova, Geetika Gupta, Martin V. Holt, Antonino Miceli, Mathew J. Cherukara
 {: style="text-align: justify;"}
 Work performed at the Center for Nanoscale Materials and Advanced Photon Source, both U.S. Department of Energy Office of Science User Facilities, was supported by the U.S. DOE, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
 {: style="text-align: justify;"}

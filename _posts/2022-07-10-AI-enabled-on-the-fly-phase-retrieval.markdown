@@ -16,7 +16,7 @@ We [demonstrated](https://aip.scitation.org/doi/10.1063/5.0013065) a while back 
 </ol>
 {: style="text-align: justify;"}
 
-Below you can find some recordings of a demonstration we did on the Hard X-ray Nanoprobe (HXN) beamline co-managed by the Center for Nanoscale Materials (CNM) and the Advanced Photon Source (APS). To make things more interesting, we moved the phase retrieval task to a palm-size [edge](https://en.wikipedia.org/wiki/Edge_computing) device.
+Below you can find some recordings of a demonstration we did on the Hard X-ray Nanoprobe (HXN) beamline co-managed by the Center for Nanoscale Materials (CNM) and the Advanced Photon Source (APS). To make it more interesting, we moved the phase retrieval task to a palm-size [edge](https://en.wikipedia.org/wiki/Edge_computing) device.
 {: style="text-align: justify;"}
 
 # Workflow

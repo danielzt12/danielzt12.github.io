@@ -52,3 +52,4 @@ Anakha V Babu (PI), Tao Zhou (moi), Saugat Kandel, Tekin Bicer, Steven Henke, Yi
 Work performed at the Center for Nanoscale Materials and Advanced Photon Source, both U.S. Department of Energy Office of Science User Facilities, was supported by the U.S. DOE, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
 {: style="text-align: justify;"}
 
+[paper link](https://arxiv.org/pdf/2209.09408.pdf)

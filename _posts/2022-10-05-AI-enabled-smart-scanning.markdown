@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI :heart: X-rays
+title: "AI \u2764 X-rays
 date:   2022-10-05 17:23:00
 categories: latest_news
 ---

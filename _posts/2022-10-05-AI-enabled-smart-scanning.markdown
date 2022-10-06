@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI-enabled smart scanning"
+title: "AI :heart: X-rays
 date:   2022-10-05 17:23:00
 categories: latest_news
 ---

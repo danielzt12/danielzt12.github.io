@@ -4,6 +4,8 @@ title:  "AI-enabled on-the-fly phase retrieval"
 date:   2022-07-10 19:28:53 -0500
 categories: latest_news
 ---
+Paper link: [https://arxiv.org/pdf/2209.09408.pdf](https://arxiv.org/pdf/2209.09408.pdf)
+
 # Background
 [Ptychography](https://en.wikipedia.org/wiki/Ptychography) is a super-resolution imaging method that has gained widespread application in [synchrontron](https://en.wikipedia.org/wiki/Synchrotron) x-ray and electron microscopy. Typical ptychographic measurement requires the scanning of a [coherent](https://en.wikipedia.org/wiki/Coherence_(physics)) beam across the sample. To ensure sufficient numerical constraint, the beam illuminated area must overlap with one another for each point of the scan. At the end of the scan, the two-dimensional detector images are then fed together into an iterative optimizer for the [phase](https://en.wikipedia.org/wiki/Phase_problem) retrieval process.
 {: style="text-align: justify;"}
@@ -52,4 +54,4 @@ Anakha V Babu (PI), Tao Zhou (moi), Saugat Kandel, Tekin Bicer, Steven Henke, Yi
 Work performed at the Center for Nanoscale Materials and Advanced Photon Source, both U.S. Department of Energy Office of Science User Facilities, was supported by the U.S. DOE, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
 {: style="text-align: justify;"}
 
-[paper link](https://arxiv.org/pdf/2209.09408.pdf)
+

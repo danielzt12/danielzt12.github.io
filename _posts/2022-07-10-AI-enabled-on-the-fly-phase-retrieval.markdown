@@ -22,7 +22,7 @@ Below you can find some recordings of a demonstration we did on the Hard X-ray N
 {: style="text-align: justify;"}
 
 # Workflow
-<video src="https://user-images.githubusercontent.com/20727490/178176368-3216b2bf-65e3-44d1-9f55-b42ac557560b.mp4" controls="controls" style="max-width: 730px;"></video>
+<video src="https://user-images.githubusercontent.com/20727490/282402032-4bfbd95b-2da0-46db-bc3c-ab0d51a39713.mp4" controls="controls" style="max-width: 730px;"></video>
 Here is an animated version of the workflow. Near the left bottom is a typical ptychographic measurement. A focused x-ray beam is being scanned on the sample with a spiral pattern producing, at each point, a diffraction pattern recorded on the detector. Those detector images are then saved on our data server, awaiting the phase retrieval process which begins on a local GPU at the end of each scan.
 {: style="text-align: justify;"}
 

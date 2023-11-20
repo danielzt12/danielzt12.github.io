@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "AI \u2764 X-rays"
+title: "AI enabled smart scanning"
 date:   2022-10-05 17:23:00
 categories: latest_news
 ---
+[Paper link](https://www.nature.com/articles/s41467-023-40339-1)
+
 ## Background
 Recent rapid developments in deep learning methods has meant that artificial intelligence (AI) 
 techniques are now finding applications in all domains of science and technology. An interesting

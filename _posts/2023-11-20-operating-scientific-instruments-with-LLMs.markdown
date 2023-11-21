@@ -12,7 +12,7 @@ Upon receiving the user prompt "Get the lattice parameters of WSe2 and set the i
 
 These calls were implemented via the LangChain’s “Structured input ReAct” framework. This library API allows developers to define the parameters and types for multi-parameter input and requires the model to use valid .json to perform a call.
 
-<img width="946" alt="llm_fig4" src="https://github.com/danielzt12/danielzt12.github.io/assets/20727490/4ed31eac-71f5-43f0-b7ed-ed72fe8caae6">
+<img width="946" alt="llm_fig4" src="https://github.com/danielzt12/danielzt12.github.io/assets/20727490/a29061f1-fd7b-48d5-b8a8-86de97ba98ee">
 
 # Demonstration
 <video src="https://user-images.githubusercontent.com/20727490/284342340-91d8b8c6-9bac-4562-8b82-34e402064561.mp4" controls="controls" style="max-width: 730px;"></video>

@@ -4,7 +4,7 @@ title:  "augmenting scientific instrumentation with LLMs"
 date:   2023-11-20 14:40:53 -0500
 categories: latest_news
 ---
-[Paper link](TBD)
+[Paper link](https://arxiv.org/abs/2312.01291)
 
 CALMS is a retrieval and tool augmented large language model (LLM) to assist scientists, design experiments around and perform science using complex scientific instrumentation. In the following example we have demonstrated moving a diffractometer at the 34-ID-C beamline of the Advanced Photon Source with a single chat message.
 
